@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px;
+  background-color: #ffffba;
+  text-align: center;
+}
+
+.container {
+  margin-top: auto;
+  height: 70vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  margin: 1.5px;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.445);
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: #ffffa1;
+  filter: drop-shadow(0 0px 5px rgb(255, 255, 0));
+}
+
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 30px;
+  }
+
+  .game {
+    height: 70vmin;
+    width: 70vmin;
+    gap: 2vmin;
+  }
+
+  .box {
+    height: 20vmin;
+    width: 20vmin;
+    font-size: 9vmin;
+  }
+
+  #msg {
+    font-size: 6vmin;
+  }
+
+  #reset-btn,
+  #new-btn {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .game {
+    height: 85vmin;
+    width: 85vmin;
+    gap: 3vmin;
+  }
+
+  .box {
+    height: 25vmin;
+    width: 25vmin;
+    font-size: 11vmin;
+  }
+
+  #msg {
+    font-size: 7vmin;
+    text-align: center;
+  }
+
+  .msg-container {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  #reset-btn,
+  #new-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
